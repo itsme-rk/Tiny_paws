@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@1,800&family=Poppins:ital,wght@0,300;0,400;0,500;1,200;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@1,800&family=Lilita+One&family=Poppins:ital,wght@0,300;0,400;0,500;1,200;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@1,800&family=Lilita+One&family=Poppins:ital,wght@0,300;0,400;0,500;1,200;1,300&family=Roboto+Slab:wght@100&display=swap');
+*
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    font-family: "Poppins",sans-serif;
+}
+html
+{
+    animation: fadeIn 1s;
+}
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+.header
+{
+    padding-top: 40px;
+    justify-content: space-between;
+    word-spacing: 30px;
+    float: right;
+    display: flex;
+    padding-right: 50px;
+    position: relative;
+}
+
+.header a
+
+{
+    color: black;
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+    font-family: "Poppins",sans-serif;
+}
+
+.header a span
+{
+    padding: 7px 10px;
+    background-color: rgb(251, 179, 44);
+    border-radius: 10px;
+}
+
+.header a:hover
+{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.background
+{
+  background-image: url(b3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  align-items: center;
+  
+}
+
+.background2 .i1
+{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 13rem;
+}
+
+.about h2
+{
+    align-items: center;
+    font-size: 70px;
+    font-weight: bold;
+    padding-left: 600px;
+    font-family: "Poppins", sans-serif;
+}
+
+.about h3
+{
+   font-size: 40px;
+   font-weight: 100;
+}
+
+#services
+{
+    font-family: "Poppins",sans-serif;
+    align-items: center;
+    font-size: 50px;
+    padding-left: 600px;
+}
+
+.buttons
+{
+    padding: 75px 75px;
+    margin-left: 50px;
+    background-color: white;
+    border-color: transparent;
+    border-radius: 30px;
+    text-decoration: none;
+    
+    background-color: rgba(254, 254, 254, 0.801);
+}
+
+.buttons:hover
+{
+    box-shadow: 10px 20px 3px rgba(175, 167, 167, 0.618);
+}
+
+.buttons span
+{
+    font-family: "Poppins";
+    font-weight: bolder;
+    font-size: 20px;
+    color: black;
+    
+}
+
+.a-cont
+{
+  float: left;
+  padding-left: 50px;
+  font-family: 'Poppins';
+  font-size: 30px;
+}
+.a-image
+{
+  float: right;
+  padding-right: 200px;
+  
+  
+}
+.a-cont span
+{
+  color: orange;
+}
+.a-cont p
+{
+  
+  align-items: center;
+  flex-wrap: wrap;
+  font-size: 20px;
+  
+}
+
+button
+
+   
+{
+    background-color: orange;
+    padding: 20px 30px;
+    border-radius:25px;
+    font-weight: 600;
+    color: white;
+    border-style: none;
+    
+}
+
+.b1:hover
+{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+button a
+{
+    color: rgb(255, 254, 254);
+    text-decoration: none;
+}
+
+.description h2
+{
+    font-family: "Poppins",sans-serif;
+    text-align: center;
+
+}
+
+.banner
+{
+    margin-top: 40px;
+    margin-left: 50px   ;
+    background-color: rgba(246, 97, 97, 0.842);
+    border-radius: 20px;
+    margin-right: 50px;
+}
+
+.banner h2
+{
+  
+  float: inline-end;
+  margin-right: 500px;
+  font-size: 30px;
+  margin-top: 40px;
+}
+
+.banner h2 span
+{
+    font-weight: 300;
+}
+
+.banner a
+{
+    color: white;
+    text-decoration: none;
+    font-family: "Poppins",sans-serif;
+}
+
+.brands h2
+{
+    font-family: "Poppins",sans-serif;
+    text-align: center;
+
+}
+
+.banner2 .doc{
+    display: flex;
+    float: right;
+    }
+
+.banner2
+{
+    background-color: bisque;
+    padding: 80px;
+    border-radius: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.banner2 h3
+{
+    font-family: "Poppins",sans-serif;
+    font-size: 30px;
+    
+}
+
+.banner3
+{
+    font-family: "Poppins",sans-serif;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bolder;
+    background-color: rgb(107, 224, 171);
+    padding: 60px;
+    border-radius: 20px;
+    margin-right: 40px;
+    margin-left: 40px;
+}
+
+.banner3 #timer
+{
+    margin-top: 20px;
+    font-size: 40px;
+    word-spacing: 30px;
+    font-family: "Poppins",sans-serif;
+}
