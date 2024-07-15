@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="auth-container login-container">
+  <div class="auth-form">
+    <h3>Login to Tiny-Paws</h3>
+    <form method="POST">
+      {% csrf_token %}
+      {{ form.as_p }}
+      <button type="submit" class="btn">Login</button>
+    </form>
+    <p>Don't have an account? <a href="{% url 'app:authView' %}" class="link">Sign Up</a></p>
+  </div>
+</div>
+{% endblock %}

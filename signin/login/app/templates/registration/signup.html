@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="auth-container signup-container">
+  <div class="auth-form">
+    <h3>Sign Up for Tiny-Paws</h3>
+    <form method="POST">
+      {% csrf_token %}
+      {% for field in form %}
+        <label for="{{ field.id_for_label }}" {% if field.errors %}class="error"{% endif %}>
+          {{ field.label }}
+          {% if not field.errors %}
+            <span class="placeholder">{{ field.field.widget.attrs.placeholder }}</span>
+          {% endif %}
+          {{ field }}
+          {% for error in field.errors %}
+            <span class="error-message">{{ error }}</span>
+          {% endfor %}
+        </label>
+      {% endfor %}
+      <button type="submit" class="btn">Sign Up</button>
+    </form>
+    <p>Already have an account? <a href="{% url 'app:login' %}" class="link">Login</a></p>
+  </div>
+</div>
+{% endblock %}
